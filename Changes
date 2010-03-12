@@ -2,4 +2,6 @@ Revision history for Dist::Zilla::Plugin::VersionFromPrev
 
 {{$NEXT}}
 
+0.01 2010-03-12 20:05:09
+
     - Initial CPAN release
