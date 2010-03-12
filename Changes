@@ -2,6 +2,10 @@ Revision history for Dist::Zilla::Plugin::VersionFromPrev
 
 {{$NEXT}}
 
+0.02 2010-03-12 20:13:33
+
+    - This module is now part of @AVAR, so don't use it in dist.ini
+
 0.01 2010-03-12 20:05:09
 
     - Initial CPAN release
