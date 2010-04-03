@@ -9,6 +9,8 @@ sub bump {
     given ($now) {
         when (not defined $now) { return '0.01' }
         when (/^ (?<major_version>\d+) \. (?<minor_version>\d+) (?:_(?<dev_version>\d+))? $/x) {
+            return $now if $ENV{DONT_BUMP_VERSION};
+            
             die "I don't handle dev versions yet" if $+{dev_version};
             
             # Bump +1

@@ -2,6 +2,8 @@ Revision history for Dist::Zilla::Plugin::VersionFromPrev
 
 {{$NEXT}}
 
+    - Don't bump the version if DONT_BUMP_VERSION=1 is set.
+
 0.02 2010-03-12 20:13:33
 
     - This module is now part of @AVAR, so don't use it in dist.ini
