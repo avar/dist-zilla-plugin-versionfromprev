@@ -2,6 +2,11 @@ Revision history for Dist::Zilla::Plugin::VersionFromPrev
 
 {{$NEXT}}
 
+0.04 2010-05-01 21:27:09
+
+    - Re-release due to Makefile.PL breakage caused by Dist::Zilla
+      FAIL: http://github.com/rjbs/dist-zilla/commit/2e47b6c205
+
 0.03 2010-04-20 16:29:57
 
     - Don't bump the version if DONT_BUMP_VERSION=1 is set.
