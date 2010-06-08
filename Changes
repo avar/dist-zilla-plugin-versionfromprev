@@ -2,6 +2,8 @@ Revision history for Dist::Zilla::Plugin::VersionFromPrev
 
 {{$NEXT}}
 
+0.05 2010-06-08 17:00:11
+
     - Fix issue #1: Don't depend on `git tag -l | sort -nr | head -n1`
       for the latest version. It doesn't work on Windows.
 
