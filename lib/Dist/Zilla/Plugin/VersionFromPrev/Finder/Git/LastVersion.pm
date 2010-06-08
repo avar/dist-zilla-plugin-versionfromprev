@@ -4,7 +4,9 @@ use 5.010;
 use Moose;
 
 sub last_version {
-    chomp(my $last = qx[ git tag -l | sort -nr | head -n1 ]);
+    chomp(my @tags = qx[ git tag -l ]);
+    my @sorted = sort { $b <=> $a } @tags;
+    my $last = $sorted[0];
 
     return $last eq '' ? undef : $last;
 }
